@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ADV 2025 - Workshop on Drone Vision</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #f5f7fa;
+      --text-color: #1e1e2f;
+      --accent-color: #1976d2;
+      --header-bg: linear-gradient(120deg, #0d47a1, #1976d2);
+    }
+
+    body.dark-mode {
+      --bg-color: #1c1c2b;
+      --text-color: #f0f0f0;
+      --header-bg: linear-gradient(120deg, #212121, #424242);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      background: var(--header-bg);
+      color: white;
+      padding: 4rem 2rem 3rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+    }
+
+    .navbar-custom {
+        background-color: #0d47a1; /* Green background */
+      }
+      .navbar-custom .navbar-nav .nav-link {
+        color: white; /* White text for links */
+      }
+      .navbar-custom .navbar-nav .nav-link:hover {
+        color: #ff9800; /* Orange on hover */
+      }
+
+    h2.section-title {
+      border-left: 5px solid var(--accent-color);
+      padding-left: 0.75rem;
+      margin-top: 2rem;
+      color: var(--accent-color);
+    }
+
+    .card {
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+      background-color: white;
+    }
+
+    body.dark-mode .card {
+      background-color: #2c2c3c;
+      color: white;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    footer {
+      background-color: #0d47a1;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background-color: var(--accent-color);
+      border: none;
+    }
+
+    .theme-toggle {
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.2rem;
+      margin-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ADV 2025</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#topics">Topics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#call">Call</a></li>
+          <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#speaker">Speaker</a></li>
+          <li class="nav-item"><a class="nav-link" href="#committee">Committee</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>ADV 2025 - International Workshop on Advances in Drone Vision</h1>
+    <p>In conjunction with ICIAP 2025 | September 15 or 16, 2025</p>
+  </header>
+
+  <main class="container py-4">
+    <section id="about">
+        <h2 class="section-title">About the Workshop</h2>
+        <p>
+          The International Workshop on Advances in Drone Vision (ADV 2025) aims to bring together top experts from academia and industry to explore the latest research in drone-based computer vision technologies. Drones are now vital across numerous sectors, including agriculture, logistics, infrastructure monitoring, disaster response, and environmental surveillance.
+        </p>
+        <p>
+          As drone autonomy evolves, computer vision is becoming the essential intelligence behind their capabilities. From object detection and scene understanding to real-time edge computing, this workshop focuses on making aerial robotics smarter, faster, and more reliable. ADV 2025 will showcase vision algorithms for onboard processing, anomaly detection, aerial image segmentation, and much more.
+        </p>
+        <p>
+          Our goal is to foster interdisciplinary collaboration, discuss breakthrough methodologies, and highlight the critical role of vision in next-gen aerial systems.
+        </p>
+      </section>
+      
+
+    <section id="topics">
+      <h2 class="section-title">Topics of Interest</h2>
+      <ul>
+        <li>Object detection & tracking in aerial imagery</li>
+        <li>Aerial image segmentation</li>
+        <li>Autonomous navigation and path planning</li>
+        <li>Energy-efficient vision & edge computing</li>
+        <li>Anomaly detection in aerial footage</li>
+        <li>Real-time drone decision-making</li>
+      </ul>
+    </section>
+
+    <section id="call">
+      <h2 class="section-title">Call for Papers</h2>
+      <p>
+        Submit original contributions in drone vision and autonomy.<br>
+        <strong>Deadline:</strong> May 30, 2025<br>
+        <strong>Notification:</strong> July 4, 2025<br>
+        <strong>Camera-ready:</strong> July 25, 2025
+      </p>
+      <a href="#" class="btn btn-primary mt-2">Submit Your Paper</a>
+    </section>
+
+    <section>
+      <h2 class="section-title">Workshop Highlights</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li>Hands-on sessions with drone footage</li>
+            <li>Live demos of edge computing in drones</li>
+            <li>Panel discussion with industry experts</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li>Case study: Roadside assistance with drones</li>
+            <li>Networking opportunities with top researchers</li>
+            <li>Spotlight presentations for accepted papers</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="organizers">
+        <h2 class="section-title">Organizers</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card p-3">
+              <img src="assets/images/org_rino.png" class="card-img-top" alt="Gennaro Vessio" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <strong>Gennaro Vessio</strong><br>University of Bari<br>
+                <a href="mailto:gennaro.vessio@uniba.it">gennaro.vessio@uniba.it</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6 col-lg-3">
+            <div class="card p-3">
+              <img src="assets/images/org_giovanna.jpg" class="card-img-top" alt="Giovanna Castellano" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <strong>Giovanna Castellano</strong><br>University of Bari<br>
+                <a href="mailto:giovanna.castellano@uniba.it">giovanna.castellano@uniba.it</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6 col-lg-3">
+            <div class="card p-3">
+              <img src="assets/images/org_pasquale.jpeg" class="card-img-top" alt="Pasquale De Marinis" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <strong>Pasquale De Marinis</strong><br>University of Bari<br>
+                <a href="mailto:pasquale.demarinis@uniba.it">pasquale.demarinis@uniba.it</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6 col-lg-3">
+            <div class="card p-3">
+              <img src="assets/images/org_vento.jpg" class="card-img-top" alt="Mario Vento" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <strong>Mario Vento</strong><br>University of Salerno<br>
+                <a href="mailto:mvento@unisa.it">mvento@unisa.it</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section id="speaker">
+      <h2 class="section-title">Invited Speaker</h2>
+      <p><strong>Valentino Iurato</strong> – Italian Ministry of Infrastructure and Sustainable Mobility (Confirmed)</p>
+    </section>
+
+    <section id="committee">
+      <h2 class="section-title">Program Committee</h2>
+      <div class="row g-4">
+        <div class="col-md-4 col-lg-3"><div class="card p-3">Corrado Mencar</div></div>
+        <div class="col-md-4 col-lg-3"><div class="card p-3">Ciro Castiello</div></div>
+        <div class="col-md-4 col-lg-3"><div class="card p-3">Massimo Martinelli</div></div>
+        <div class="col-md-4 col-lg-3"><div class="card p-3">Pieter Blok</div></div>
+        <div class="col-md-4 col-lg-3"><div class="card p-3">Rogier Brussee</div></div>
+        <div class="col-md-4 col-lg-3"><div class="card p-3">Uzay Kaymak</div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 ADV Workshop | Designed for ICIAP 2025 | Contact: gennaro.vessio@uniba.it
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
