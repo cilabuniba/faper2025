@@ -9,88 +9,94 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     :root {
-      --bg-color: #fdf6ef; /* light warm beige */
-      --text-color: #3e2f1c; /* deep brown */
-      --accent-color: #d9822b; /* artistic orange */
+      --bg-color: #fdf6ef;
+      /* light warm beige */
+      --text-color: #3e2f1c;
+      /* deep brown */
+      --accent-color: #d9822b;
+      /* artistic orange */
       --header-bg: linear-gradient(120deg, #c9742c, #e8b57a);
     }
-  
+
     body.dark-mode {
       --bg-color: #2b2118;
       --text-color: #f0e8de;
       --header-bg: linear-gradient(120deg, #3e2f1c, #6b4c32);
     }
-  
+
     body {
       font-family: 'Inter', sans-serif;
       background-color: var(--bg-color);
       color: var(--text-color);
       transition: background 0.3s, color 0.3s;
     }
-  
+
     header {
       background-image: url('assets/images/rome.jpg');
       background-size: cover;
-      background-position: center;
+      background-position: center 60%;
+      /* Lower the image */
       background-repeat: no-repeat;
       color: #fff3e0;
       padding: 4rem 2rem 3rem;
       text-align: center;
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     }
-  
+
+
     header h1 {
       font-size: 2.8rem;
       font-weight: 800;
     }
-  
+
     .navbar-custom {
-      background-color: #d9822b; /* warm orange */
+      background-color: #d9822b;
+      /* warm orange */
     }
-  
+
     .navbar-custom .navbar-nav .nav-link {
       color: #fff8f0;
     }
-  
+
     .navbar-custom .navbar-nav .nav-link:hover {
       color: #ffcc80;
     }
-  
+
     h2.section-title {
       border-left: 5px solid var(--accent-color);
       padding-left: 0.75rem;
       margin-top: 2rem;
       color: var(--accent-color);
     }
-  
+
     .card {
       border-radius: 0.75rem;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
       transition: transform 0.2s ease;
       background-color: #fffaf5;
     }
-  
+
     body.dark-mode .card {
       background-color: #3e2f1c;
       color: #f0e8de;
     }
-  
+
     .card:hover {
       transform: translateY(-4px);
     }
-  
+
     footer {
       background-color: #c9742c;
       color: white;
       padding: 1rem;
       text-align: center;
     }
-  
+
     .btn-primary {
       background-color: var(--accent-color);
       border: none;
     }
-  
+
     .theme-toggle {
       cursor: pointer;
       background: none;
@@ -100,7 +106,7 @@
       margin-left: 1rem;
     }
   </style>
-  
+
 </head>
 
 <body>
